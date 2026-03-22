@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/kinopoisk/:path*",
+      "destination": "/api/kinopoisk?path=:path*"
+    }
+  ]
+}

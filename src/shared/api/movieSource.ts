@@ -8,7 +8,7 @@ function resolveApiUrl() {
   const configuredApiUrl = import.meta.env.VITE_KINOPOISK_API_URL?.trim();
 
   if (!configuredApiUrl) {
-    return import.meta.env.DEV ? DEV_PROXY_API_URL : DEFAULT_REMOTE_API_URL;
+    return DEV_PROXY_API_URL;
   }
 
   if (

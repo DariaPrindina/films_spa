@@ -29,6 +29,7 @@ cp .env.default .env
 3. Заполнить `KINOPOISK_API_KEY` в `.env`.
 
 Для локальной разработки `Vite` проксирует запросы к Kinopoisk через `/api/kinopoisk`, поэтому ключ не уходит из браузера. Если нужен другой backend/proxy, можно задать `VITE_KINOPOISK_API_URL`.
+В production по умолчанию также используется путь `/api/kinopoisk` (для serverless proxy, например на Vercel).
 
 4. Запустить приложение:
 
@@ -45,4 +46,4 @@ npm run build
 ## Переменные окружения
 
 - `KINOPOISK_API_KEY` - серверный ключ доступа к API для dev-proxy.
-- `VITE_KINOPOISK_API_URL` - базовый URL API или вашего backend/proxy.
+- `VITE_KINOPOISK_API_URL` - опциональный базовый URL API/прокси. Если не задан, используется `/api/kinopoisk`.
