@@ -1,0 +1,31 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(21, 28, 43, 0.44);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  z-index: 50;
+}
+
+.modal-card {
+  width: min(100%, 480px);
+  padding: 24px;
+}
+
+.modal-card h2,
+.modal-card p {
+  margin-top: 0;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.modal-actions > * {
+  flex: 0 0 auto;
+}

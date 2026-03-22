@@ -1,0 +1,41 @@
+.compare-panel {
+  padding: 14px;
+}
+
+.compare-panel__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.compare-panel__table-wrapper {
+  overflow-x: auto;
+}
+
+.compare-panel__table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.compare-panel__table th,
+.compare-panel__table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid rgba(104, 120, 142, 0.14);
+  vertical-align: top;
+  font-size: 0.9rem;
+}
+
+.compare-panel__table th {
+  color: #233147;
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .compare-panel {
+    padding: 12px;
+  }
+}
